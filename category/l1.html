@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Data Visualisation</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Data Visualisation</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/l1.html">L1</a></li>
+                                                <li><a href="/category/l2.html">L2</a></li>
+                                                <li><a href="/category/nlp.html">NLP</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">Basic data information</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:59:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>We will now display the dataset characteristics and information</p>
+<p>Total number of samples: 31875</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">region</th>
+<th style="text-align: right;">number_of_samples</th>
+<th style="text-align: right;">number_of_unique_hotels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Andorra la Vella</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Canillo</td>
+<td style="text-align: right;">3879</td>
+<td style="text-align: right;">47</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Encamp</td>
+<td style="text-align: right;">4178</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Escaldes-Engordany</td>
+<td style="text-align: right;">4792</td>
+<td style="text-align: right;">49</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">La Massana</td>
+<td style="text-align: right;">4557</td>
+<td style="text-align: right;">49</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Ordino</td>
+<td style="text-align: right;">4836</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Sant Julià de Lòria</td>
+<td style="text-align: right;">4633</td>
+<td style="text-align: right;">50</td>
+</tr>
+</tbody>
+</table>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">1. Distribution of Ratings</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:58:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info -->                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">1.1 Histogram of Ratings</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:57:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Visualize the distribution of Hotel Ratings</p>
+<p><img alt="" src="../images/L1_02.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">1.2. Average Rating per region</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:56:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Bar chart showing the average rating of hotels in each region.</p>
+<p><img alt="" src="../images/L1_03.png"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: right;">Average Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Sant Julià de Lòria</td>
+<td style="text-align: right;">4.06803</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Andorra la Vella</td>
+<td style="text-align: right;">4.11</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Escaldes-Engordany</td>
+<td style="text-align: right;">4.14508</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Encamp</td>
+<td style="text-align: right;">4.22039</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Ordino</td>
+<td style="text-align: right;">4.24735</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">La Massana</td>
+<td style="text-align: right;">4.25774</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Canillo</td>
+<td style="text-align: right;">4.30923</td>
+</tr>
+</tbody>
+</table>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">2. Reviews Analysis</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:55:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info -->                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.1. Number of Reviews per hotel</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:54:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Bar chart showing the total number of reviews for each hotel.</p>
+<p><img alt="" src="../images/L1_05.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.2 Review Count Comparison</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:53:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Bar chart comparing the number of reviews between regions.</p>
+<p><img alt="" src="../images/L1_06.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.2. Review count over time</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:52:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Line chart showing the number of reviews over time to identify trends.</p>
+<p><img alt="" src="../images/L1_07.png"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Review Period</th>
+<th style="text-align: right;">Number of Reviews</th>
+<th style="text-align: right;">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">&lt; 2016</td>
+<td style="text-align: right;">538</td>
+<td style="text-align: right;">1.68784</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2016-2020</td>
+<td style="text-align: right;">7045</td>
+<td style="text-align: right;">22.102</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-2022</td>
+<td style="text-align: right;">3589</td>
+<td style="text-align: right;">11.2596</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2022-2024</td>
+<td style="text-align: right;">7398</td>
+<td style="text-align: right;">23.2094</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">&gt; 2024</td>
+<td style="text-align: right;">13305</td>
+<td style="text-align: right;">41.7412</td>
+</tr>
+</tbody>
+</table>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">3. Language Analysis</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:51:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info -->                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">3.1 Language Distribution</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:50:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Pie chart showing the distribution of review languages.</p>
+<p><img alt="" src="../images/L1_09.png"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Review Period</th>
+<th style="text-align: right;">Number of Reviews</th>
+<th style="text-align: right;">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">&lt; 2016</td>
+<td style="text-align: right;">538</td>
+<td style="text-align: right;">1.68784</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2016-2020</td>
+<td style="text-align: right;">7045</td>
+<td style="text-align: right;">22.102</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-2022</td>
+<td style="text-align: right;">3589</td>
+<td style="text-align: right;">11.2596</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2022-2024</td>
+<td style="text-align: right;">7398</td>
+<td style="text-align: right;">23.2094</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">&gt; 2024</td>
+<td style="text-align: right;">13305</td>
+<td style="text-align: right;">41.7412</td>
+</tr>
+</tbody>
+</table>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">4. Business Status Analysis</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:49:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info -->                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">4.1 Business Status Distribution</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:48:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/l1.html">L1</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Pie chart showing the distribution of business status (open, closed, etc).</p>
+<p><img alt="" src="../images/L1_11.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <section id="extras" class="body">
+                </section><!-- /#extras -->
+
+
+        </body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Data Visualisation</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Data Visualisation</a></h1>
+                        <nav><ul>
+                                                <li><a href="/category/l1.html">L1</a></li>
+                                                <li><a href="/category/l2.html">L2</a></li>
+                                                <li class="active"><a href="/category/nlp.html">NLP</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">L3 Dataframe</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:59:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Visualize the L3 dataset.</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">1. TF-IDF (Term Frequency-Inverse Document Frequency)</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:58:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>The data is converted into a TF-IDF matrix, where the reviews are represented as a vector.TF-IDF matrix shape: (30758, 1000)</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">1.1 Visualize Important Words Using a Word Cloud</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:57:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>To understand which words are the most important in the dataset, we can generate</p>
+<p><img alt="" src="../images/NLP_02.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">1.2. Dimensionality Reduction Using Truncated SVD (for Visualization)</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:56:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Since TF-IDF can result in a high-dimensional space, we can reduce the dimensionality of the matrix using Truncated SVD to plot it and understand how well it captures variance.</p>
+<p><img alt="" src="../images/NLP_03.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">1.3 Correlation Analysis with Review Ratings</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:55:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>To understand if the TF-IDF features are useful, we can correlate the top TF-IDF features with the review_rating to check if certain words appear more frequently in positive or negative reviews.</p>
+<p><img alt="" src="../images/NLP_04.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">2. Word Embeddings (Word2Vec)</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:54:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Use pre-trained Word2Vec embeddings to train the reviews in our dataset. Each review will be respresented by averaging the word vectors.</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.1. Preprocessing the Text Data</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:53:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Before applying any word embedding technique, we need to preprocess the review texts by tokenizing, lowercasing, removing stopwords, and handling punctuation.</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.2. Generate Word Embeddings</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:52:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>We’ll use Gensim’s Word2Vec to train word embeddings on the review dataset. Afterward, we’ll create a mean embedding for each review by averaging the word vectors.</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.3. Dimensionality Reduction for Visualization (PCA/t-SNE)</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:51:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Use PCA to reduce the dimensionality of the embeddings to 2D for visualization.</p>
+<p><img alt="" src="../images/NLP_08.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.4. Word Cloud of Important Words Using Embeddings</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:50:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>We identify words that are close to the center of high-rating embeddings and generate a word cloud based on their fequency and importance</p>
+<p><img alt="" src="../images/NLP_09.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">2.5. Correlation Analysis of Embedding Features</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:49:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Calculate the correlation between the review ratings and the most prominent dimensions in the word embeddings.</p>
+<p><img alt="" src="../images/NLP_10.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">3. N-grams (Bi-grams)</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:48:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Extend TF-IDF to generate bi-grams. Essential to capture meaningful phrases</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">3.1. Word Cloud for Bi-grams</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:47:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Create a word cloud for the calculated bi-grams to see which are the most relevant combinations of words.</p>
+<p><img alt="" src="../images/NLP_12.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">3.2. Scatter Plot for PCA-reduced features</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:46:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>We reduced the dimensionality of the bi-grams and produced a scatter plot for 2D visualization.</p>
+<p><img alt="" src="../images/NLP_13.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">3.3. Correlation matrix</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:45:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Correlation matrix between the SVD components and the Ratings</p>
+<p><img alt="" src="../images/NLP_14.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">4. Sentiment Analysis</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:44:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Apply a sentiment analysis model to extract sentiment scores. These scores can be used as additional features alongside TF-IDF or embeddings.</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">4.1. Overall sentiment analysis</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:43:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Correlation matrix between the SVD components and the Ratings</p>
+<p><img alt="" src="../images/NLP_16.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">4.2. Sentiment Comparison</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:42:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Bar chart comparing sentiment distributions across regions.</p>
+<p><img alt="" src="../images/NLP_17.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">5. Text Length</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:41:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Compute the reviews length</p>
+<p><img alt="" src="../images/NLP_18.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title"><h1 class="entry-title">6. Topic Modeling (LDA - Latent Dirichlet Allocation)</h1></h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:40:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Use LDA to assign topic probabilities to each review.</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">6.1. Generate topics</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:39:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Generate and print each topic.Topic: 0
+Words: 0.048<em>"hotel" + 0.045</em>"good" + 0.021<em>"room" + 0.020</em>"staff" + 0.018<em>"friendly" + 0.017</em>"clean" + 0.017<em>"great" + 0.016</em>"breakfast" + 0.015<em>"location" + 0.015</em>"excellent"
+Topic: 1
+Words: 0.029<em>"u" + 0.020</em>"hotel" + 0.013<em>"time" + 0.012</em>"day" + 0.009<em>"one" + 0.007</em>"two" + 0.007<em>"reception" + 0.006</em>"made" + 0.006<em>"first" + 0.006</em>"people"
+Topic: 2
+Words: 0.032<em>"hotel" + 0.026</em>"room" + 0.017<em>"staff" + 0.013</em>"nice" + 0.013<em>"good" + 0.013</em>"great" + 0.012<em>"breakfast" + 0.010</em>"stay" + 0.008<em>"food" + 0.008</em>"really"
+Topic: 3
+Words: 0.026<em>"room" + 0.024</em>"well" + 0.018<em>"good" + 0.017</em>"parking" + 0.016<em>"apartment" + 0.013</em>"clean" + 0.011<em>"breakfast" + 0.009</em>"lot" + 0.009<em>"located" + 0.008</em>"staff"
+Topic: 4
+Words: 0.040<em>"room" + 0.022</em>"hotel" + 0.015<em>"bed" + 0.013</em>"parking" + 0.010<em>"price" + 0.010</em>"good" + 0.009<em>"lot" + 0.009</em>"breakfast" + 0.009<em>"star" + 0.008</em>"little"</p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">6.2. Topic word cloud</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:38:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>For each topic, produce a word cloud with frequency.</p>
+<p><img alt="" src="../images/NLP_21.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <aside id="featured" class="body">
+                    <article>
+                        <h2 class="entry-title">6.3. Topic distributions for each review</h2>
+<footer class="post-info">
+        <!-- <abbr class="published" title="2024-10-11T00:37:00+02:00">
+                Published: Fri 11 October 2024
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/norma.html">Norma</a>
+                </address>
+        <p>In <a href="/category/nlp.html">NLP</a>.</p>
+        -->
+</footer><!-- /.post-info --><p>Generate a heatmap printing the topic distribution for each review.</p>
+<p><img alt="" src="../images/NLP_22.png"></p>                    </article>
+                </aside><!-- /#featured -->
+                <section id="extras" class="body">
+                </section><!-- /#extras -->
+
+
+        </body>
+</html>
